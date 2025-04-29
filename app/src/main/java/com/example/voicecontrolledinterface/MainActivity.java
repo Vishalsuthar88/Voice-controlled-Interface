@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         new Thread(() -> {
             try {
                 OkHttpClient client = new OkHttpClient();
-                String url = "https://api.openweathermap.org/data/2.5/weather?q=London&appid=60dbc83afe15d29c724d84cefb0523a0&units=metric";
+                String url = "https://api.openweathermap.org/data/2.5/weather?q=London&appid=API_KEY&units=metric";
                 Request request = new Request.Builder().url(url).build();
                 Response response = client.newCall(request).execute();
 
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         new Thread(() -> {
             try {
                 OkHttpClient client = new OkHttpClient();
-                String url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=037bb4ae230c45c6b306b6119bdd3f48";
+                String url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY";
                 Request request = new Request.Builder().url(url).build();
                 Response response = client.newCall(request).execute();
 
